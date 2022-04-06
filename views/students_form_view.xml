@@ -1,0 +1,40 @@
+<odoo>
+    <record id="students_form_view1" model="ir.ui.view">
+        <field name="name">college.students.form</field>
+        <field name="model">college.students</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="first_name_id"/>
+                            <field name="last_name"/>
+                        </group>
+                        <group>
+                            <field name="admission_no"/>
+                            <field name="admission_date"/>
+                        </group>
+                        <notebook>
+                            <page string="Address">
+                                <group>
+                                    <field name="communication_address"/>
+                                    <field name="permanent_address"
+                                           attrs="{'invisible': [('same_as_communication_address','=',True)] }"/>
+                                    <field name="same_as_communication_address"/>
+                                </group>
+                            </page>
+                            <page string="Other Details">
+                                <group>
+                                    <field name="father"/>
+                                    <field name="mother"/>
+                                    <field name="phone"/>
+                                    <field name="email"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

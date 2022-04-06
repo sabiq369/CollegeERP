@@ -1,0 +1,23 @@
+<odoo>
+    <record id="course_form_view" model="ir.ui.view">
+        <field name="name">college.config.course.form</field>
+        <field name="model">college.config.course</field>
+        <field name="arch" type="xml">
+            <form string="Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="duration" placeholder="In Years"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="category"/>
+                            <field name="no_of_semester"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

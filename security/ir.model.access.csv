@@ -1,0 +1,6 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+college_erp.access_models_principal,access_models_principal,college_erp.model_college_students,college_erp.college_principal_id,1,1,1,1
+college_erp.access_models_teacher,access_models_teacher,college_erp.model_college_students,college_erp.college_teacher_id,1,0,0,0
+college_erp.access_models_course_internal_users,access_models_internal_users,college_erp.model_college_config_course,base.group_user,1,1,1,1
+college_erp.access_models_admission_internal_users,access_models_internal_users,college_erp.model_college_admission,base.group_user,1,1,1,1
+college_erp.access_models_semester_internal_users,access_models_semester_internal_users,college_erp.model_college_config_semester,base.group_user,1,1,1,1

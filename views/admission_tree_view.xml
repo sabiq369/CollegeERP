@@ -1,0 +1,25 @@
+<odoo>
+    <record id="admission_tree_view" model="ir.ui.view">
+        <field name="name">college.admission.tree</field>
+        <field name="model">college.admission</field>
+        <field name="arch" type="xml">
+            <tree string="Tree Strings">
+                <field name="first_name_id"/>
+                <field name="last_name"/>
+                <field name="father"/>
+                <field name="mother"/>
+                <field name="permanent_address"/>
+                <field name="same_as_communication_address"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="course_id"/>
+                <field name="date_of_application"/>
+                <field name="academic_year"/>
+                <field name="educational_institute"/>
+                <field name="transfer_certificate"/>
+                <field name="active"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

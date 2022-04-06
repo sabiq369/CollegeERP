@@ -1,0 +1,29 @@
+<odoo>
+    <record id="students_form_view1" model="ir.ui.view">
+        <field name="name">college.config.semester.form</field>
+        <field name="model">college.config.semester</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="no_of_semester"/>
+                            <field name="course"/>
+                        </group>
+                        <group></group>
+                        <notebook>
+                            <page string="Syllabus">
+
+                            </page>
+                            <page string="Semesters">
+
+                            </page>
+
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

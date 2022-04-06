@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_management">
+             <field name="name">College</field>
+        </record>
+
+        <record id="college_principal_id" model="res.groups">
+            <field name="name">Principal</field>
+            <field name="category_id" ref="module_management"/>
+        </record>
+        <record id="college_teacher_id" model="res.groups">
+            <field name="name">Teacher</field>
+            <field name="category_id" ref="module_management"/>
+        </record>
+    </data>
+</odoo>

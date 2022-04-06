@@ -1,0 +1,15 @@
+<odoo>
+    <record id="course_tree_view" model="ir.ui.view">
+        <field name="name">college.config.course.tree</field>
+        <field name="model">college.config.course</field>
+        <field name="arch" type="xml">
+            <tree string="Tree Strings">
+                <field name="name"/>
+                <field name="category"/>
+                <field name="duration"/>
+                <field name="no_of_semester"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

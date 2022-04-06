@@ -1,0 +1,15 @@
+<odoo>
+    <record id="semester_tree_view" model="ir.ui.view">
+        <field name="name">college.config.semester.tree</field>
+        <field name="model">college.config.semester</field>
+        <field name="arch" type="xml">
+            <tree string="Tree Strings">
+                <field name="name"/>
+                <field name="no_of_semester"/>
+                <field name="course"/>
+                <field name="subject"/>
+                <field name="max_marks"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

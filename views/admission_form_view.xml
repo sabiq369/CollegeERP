@@ -1,0 +1,66 @@
+<odoo>
+    <record id="students_form_view" model="ir.ui.view">
+        <field name="name">college.admission.form</field>
+        <field name="model">college.admission</field>
+        <field name="arch" type="xml">
+            <form string="Test">
+                <header>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,application,approved,done,rejected"/>
+                    <button name="button_application" class="oe_highlight"
+                            states="draft" string="Confirm" type="object"/>
+                    <button name="button_approved" class="oe_highlight"
+                            states="application" string="Approve"
+                            type="object"/>
+                    <button name="button_done" widget="selection"
+                            class="oe_highlight" states="approved"
+                            string="Mark As Done" type="object"/>
+                    <button name="button_rejected" class="oe_highlight"
+                            states="done" string="Reject" type="object"/>
+                    <button name="button_draft" class="oe_highlight"
+                            states="done" string="Reset To Draft"
+                            type="object"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="first_name_id"/>
+                            <field name="last_name"/>
+                            <field name="date_of_application"/>
+                        </group>
+                        <group></group>
+                        <notebook>
+                            <page string="Education">
+                                <group>
+                                    <field name="course_id"
+                                           options="{'no_create_edit': True}"/>
+                                    <field name="academic_year"/>
+                                    <field name="previous_education_qualification"/>
+                                    <field name="educational_institute"/>
+                                    <field name="transfer_certificate"
+                                           widget="many2many_binary"/>
+                                </group>
+                            </page>
+                            <page string="Address">
+                                <group>
+                                    <field name="communication_address"/>
+                                    <field name="permanent_address"
+                                           attrs="{'invisible': [('same_as_communication_address','=',True)] }"/>
+                                    <field name="same_as_communication_address"/>
+                                </group>
+                            </page>
+                            <page string="Other Details">
+                                <group>
+                                    <field name="father"/>
+                                    <field name="mother"/>
+                                    <field name="phone"/>
+                                    <field name="email"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

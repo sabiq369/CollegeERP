@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="students_tree_view_id1" model="ir.ui.view">
+        <field name="name">college.students.tree</field>
+        <field name="model">college.students</field>
+        <field name="arch" type="xml">
+            <tree string="Tree String">
+                <field name="admission_no"/>
+                <field name="admission_date"/>
+                <field name="first_name_id"/>
+                <field name="last_name"/>
+                <field name="father"/>
+                <field name="mother"/>
+                <field name="communication_address"/>
+                <field name="permanent_address"/>
+                <field name="same_as_communication_address"/>
+                <field name="phone"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
+
+

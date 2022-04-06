@@ -1,0 +1,22 @@
+<odoo>
+     <record id="action_students" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">college.students</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+     <record id="action_admission" model="ir.actions.act_window">
+        <field name="name">Admission</field>
+        <field name="res_model">college.admission</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <record id="action_course" model="ir.actions.act_window">
+        <field name="name">Course</field>
+        <field name="res_model">college.config.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_semester" model="ir.actions.act_window">
+        <field name="name">Course</field>
+        <field name="res_model">college.config.semester</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
