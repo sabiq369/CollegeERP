@@ -14,12 +14,13 @@
                         <group></group>
                         <notebook>
                             <page string="Syllabus">
-
+                                <field name="syllabus_ids" widget="one2many">
+                                    <tree editable="bottom">
+                                        <field name="subject"/>
+                                        <field name="max_marks"/>
+                                    </tree>
+                                </field>
                             </page>
-                            <page string="Semesters">
-
-                            </page>
-
                         </notebook>
                     </group>
                 </sheet>

@@ -18,6 +18,6 @@ class StudentErp(models.Model):
         string='Same As Communication Address', )
     phone = fields.Integer('Phone No')
     email = fields.Char('Email')
-    active = fields.Boolean('Active', default=True)
+    active = fields.Boolean(default=True)
 
 

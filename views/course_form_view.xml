@@ -9,12 +9,15 @@
                         <group>
                             <field name="name"/>
                             <field name="duration" placeholder="In Years"/>
-                            <field name="active"/>
                         </group>
                         <group>
                             <field name="category"/>
                             <field name="no_of_semester"/>
                         </group>
+                        <notebook>
+                            <page string="Semesters">
+                            </page>
+                        </notebook>
                     </group>
                 </sheet>
             </form>

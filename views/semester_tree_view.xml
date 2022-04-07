@@ -7,8 +7,6 @@
                 <field name="name"/>
                 <field name="no_of_semester"/>
                 <field name="course"/>
-                <field name="subject"/>
-                <field name="max_marks"/>
             </tree>
         </field>
     </record>

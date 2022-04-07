@@ -15,7 +15,7 @@
         <field name="view_mode">tree,form</field>
     </record>
     <record id="action_semester" model="ir.actions.act_window">
-        <field name="name">Course</field>
+        <field name="name">Semester</field>
         <field name="res_model">college.config.semester</field>
         <field name="view_mode">tree,form</field>
     </record>

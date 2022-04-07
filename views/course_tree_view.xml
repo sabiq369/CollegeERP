@@ -8,7 +8,6 @@
                 <field name="category"/>
                 <field name="duration"/>
                 <field name="no_of_semester"/>
-                <field name="active"/>
             </tree>
         </field>
     </record>
